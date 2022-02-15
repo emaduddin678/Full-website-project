@@ -270,12 +270,21 @@ nav .full-nav  .buy{
     margin-top: 15px;
     border-radius: 10px;
     box-sizing: border-box;
+    
 }
-
-.all-box .box-main .box-item .box-img img{
+.all-box .box-main .box-item .box-img{
     width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.all-box .box-main .box-item .box-img img{
+
+    width: 100%;
+    height: auto;
     border-radius: 10px;
     transform: scale(1);
+    
 }
 .box-text{
     width: 100%;
@@ -296,11 +305,12 @@ nav .full-nav  .buy{
 .box-main:hover{
     cursor: pointer;
     transition:all 1s linear;
-    background-color: #f70445;
+    
 }
 .all-box .box-main .box-item .box-img img:hover{
-    transform: scale(1.01);
+    transform: scale(1.1);
     transition:all 0.5s linear;
+    
 }
 .clear{
     clear: both;
@@ -826,45 +836,276 @@ nav .full-nav  .buy{
 }
 .blog-part .up-blog h3{
     color: #eb2f61;
-    width: 100%;
     margin-bottom: 5px;
 }
 .blog-part .up-blog h1{
     color: #202020;
+    font-size: 35px;
 }
-.blog-part .box-part{
+
+.all-blog-card{
+    height: 500px;
+    padding: 30px;
     width: 100%;
-    padding: 40px;
-}
-.blog-part .box-part .box-canada{
-    width: 400px;
-    height: 410px;
-    background: gray;
-    border-radius: 10px;
-    background: linear-gradient(to right, rgb(222, 227, 231), rgb(255, 255, 255));
-    box-shadow: 1px 1px 5px #6d6d6d;
     box-sizing: border-box;
-    position: relative;
+    display: flex;
 }
-.blog-part .box-part .box-canada .shrt-box{
-    width: 350px;
-    height: 240px;
-    position: absolute;
-    margin: 20px;
-    border-radius: 10px;
-    display: block;
-}
-.blog-part .box-part .box-canada .shrt-box img{
-    border-radius: 10px;
+
+ .card-img{
     width: 100%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
 }
-.blog-part .box-part .box-canada .txt{
+ .card-img img{
     width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transform: scale(1);
+    
+}
+ .card-img img:hover{
+    transform: scale(1.1);
+    transition: all 0.2s linear;
+}
+
+
+
+.all-blog-card .card-box1{
+    background-image: linear-gradient(to right, #f0f6fa, white);
     padding: 20px;
+    flex: 1;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 1px 1px 5px #c5d5df;
 }
-.blog-part .box-part .box-canada .txt .lft{
+.all-blog-card .card-box1 .card-text .title .title-left{
+    float: left;
+
+}
+.all-blog-card .card-box1 .card-text .title .title-right{
+    float: right;
+
+}
+.all-blog-card .card-box1 .card-text .main-title{
+    margin-top: 10px;
+    font-size: x-large;
+}
+
+.all-blog-card .card-box2{
+    background-image: linear-gradient(to right, #f0f6fa, white);
+    flex: 1;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 1px 1px 5px #c5d5df;
+}
+.all-blog-card .card-box2 .card-text .title .title-left{
     float: left;
 }
-.blog-part .box-part .box-canada .txt .rit{
+.all-blog-card .card-box2 .card-text .title .title-right{
     float: right;
+}
+.all-blog-card .card-box2 .card-text .main-title{
+    margin-top: 10px;
+    font-size: x-large;
+}
+
+.all-blog-card .card-box3{
+    background-image: linear-gradient(to right, #f0f6fa, white);
+    flex: 1;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 1px 1px 5px #c5d5df;
+}
+
+.all-blog-card .card-box3 .card-text .title .title-left{
+    float: left;
+}
+.all-blog-card .card-box3 .card-text .title .title-right{
+    float: right;
+}
+.all-blog-card .card-box3 .card-text .main-title{
+    margin-top: 10px;
+    font-size: x-large;
+}
+/* blog part */
+
+.contact-me{
+    width: 100%;
+    background-color: #ECF0F3;
+    padding: 40px;
+}
+.contact-me .up-contact{
+    text-align: center;
+    width: 100%;
+    letter-spacing: 2px;
+    padding-bottom: 40px;
+}
+.contact-me .up-contact h3{
+    text-transform: uppercase;
+    color: #eb2f61;
+}
+.contact-me .up-contact h1{
+    text-transform: capitalize;
+    color:#202020;
+    font-size: 35px;
+    font-weight: bold;
+}
+   /* Form part  */
+
+.contact-me .full-form{
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    
+}
+.contact-me .full-form .form-left{
+    background-color: #E2E8EC;
+    height: 800px;
+    flex: 3;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-right: 30px;
+    padding: 20px;
+    box-shadow: 1px 1px 5px #a0a7ac;
+}
+.contact-me .full-form .form-left .contact-image{
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.contact-me .full-form .form-left img{
+    width: 100%;
+    border-radius: 10px;
+    transform: scale(1);
+}
+.contact-me .full-form .form-left img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+}
+
+
+.contact-me .full-form .form-left .lower-contact-image{
+    letter-spacing: 1px;
+    margin-top: 40px;
+}
+.contact-me .full-form .form-left .lower-contact-image h1{
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+.contact-me .full-form .form-left .lower-contact-image p{
+    font-size: 20px;
+}
+.contact-me .full-form .form-left .lower-contact-image .mid{
+    margin: 20px 0;
+    font-size: 20px;
+
+}
+
+.contact-me .full-form .form-left .lower-contact-image strong span:hover{
+    color: #eb2f61;
+    cursor: pointer;
+    transition: all .3s linear;
+    
+}
+
+
+/* Form devided css
+ */
+.contact-me .full-form .form-right{
+    flex: 5;
+    background-color: #E2E8EC;
+    height: 800px;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 1px 1px 5px #a0a7ac;
+}
+
+.contact-me .full-form .form-right .name-number{
+    margin-bottom: 50px;
+    display: flex;
+}
+.contact-me .full-form .form-right .name-number .name-part{
+    flex: 1;
+    overflow: hidden;
+    
+}
+.contact-me .full-form .form-right .name-number .name-part 
+input{
+    border-radius: 5px;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.contact-me .full-form .form-right .name-number .number-part{
+    flex: 1;
+    
+}
+.contact-me .full-form .form-right .name-number .number-part 
+input{
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 25px;
+
+}
+.contact-me .full-form .form-right .email {
+    margin-bottom: 30px;
+    width: 100%;
+}
+.contact-me .full-form .form-right .email input{
+    font-size: 25px;
+    width: 100%;
+    border-radius: 5px;
+}
+.contact-me .full-form .form-right .sub input{
+    font-size: 25px;
+    border-radius: 5px;
+    width: 100%;
+}
+.contact-me .full-form .form-right .sub{
+    width: 100%;
+}
+.contact-me .full-form .form-right .msg{
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    
+}
+.contact-me .full-form .form-right .msg textarea{
+    margin-top: 20px;
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+}
+.contact-me .full-form .form-right .subm{
+    width: 100%;
+    border-radius: 5px;
+}
+.contact-me .full-form .form-right .subm input{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+}
+.contact-me .full-form .form-right .subm input:hover{
+    background-color: #ff014f;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+/* form part complete */
+.end{
+    width: 100%;
+    height: 300px;
+    background-color: #E2E8EC;
+    text-align: center;
+}
+.end img{
+    margin-bottom: 20px;
+    margin-top: 110px;
+    width: 90px;
+    height: auto;
 }
